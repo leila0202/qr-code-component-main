@@ -1,0 +1,55 @@
+:root {
+  --light-gray: hsl(212, 45%, 89%);
+  --white: hsl(0, 0%, 100%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/outfit-v6-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('./fonts/outfit-v6-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/outfit-v6-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('./fonts/outfit-v6-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+body {
+  font-family: Outfit, sans-serif;
+  background-color: var(--light-gray);
+}
+
+#main-container {
+  background-color: var(--white);
+  border-radius: 10px;
+  width: 321px;
+  height: 500px;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#main-container h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--dark-blue);
+}
+
+#main-container p {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--grayish-blue)
+}
