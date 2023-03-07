@@ -30,29 +30,33 @@
 body {
   font-family: Outfit, sans-serif;
   background-color: var(--light-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  
 }
 
-#main-container {
+
+
+#qr-container {
   background-color: var(--white);
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+
   border-radius: 15px;
   width: 321px;
   height: 500px;
   padding: 5px;
   text-align: center; 
-  
 }
 
-#main-container h1 {
+#qr-container h1 {
   font-weight: 700;
   font-size: 20px;
   color: var(--dark-blue);
 }
 
-#main-container p {
+#qr-container p {
   font-weight: 400;
   font-size: 15px;
   color: var(--grayish-blue)

@@ -45,6 +45,15 @@ I learned how to center a div on the page:
   text-align: center; 
 }
 ```
+more modern way to center the div:
+```css
+#parentcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+```
 
 
 
